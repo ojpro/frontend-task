@@ -18,7 +18,7 @@
             <tr>
                 <th>ID</th>
                 <th>Date de Création</th>
-                <th>Etat</th>
+                <th class="text-center">Etat</th>
                 <th>Nom</th>
                 <th>Prénom</th>
                 <th>Nom d'utilisateur</th>
@@ -31,8 +31,7 @@
     </section>
 
     <section class="add_user">
-        <button type="button">Ajouter d'utilisateur</button>
-
+        <button type="button" class="highlight" onclick="toggleModal()">Ajouter d'utilisateur</button>
         <div class="modal hidden" id="modalBox">
             <form action="" id="form">
                 <h1>Ajout d'utilisateurs</h1>
@@ -74,7 +73,7 @@
 
                     </div>
                     <!--Empty Cell-->
-                    <div>
+                    <div class="separator">
                     </div>
                     <!--End Empty Cell-->
                     <div>
@@ -84,7 +83,7 @@
                         <input id="matricule" required type="number">
                     </div>
                 </div>
-                <button class="" type="submit">Enregistrer</button>
+                <button class="highlight valide" type="submit">Enregistrer</button>
             </form>
 
         </div>
