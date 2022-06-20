@@ -7,7 +7,86 @@
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+<main>
+    <section class="users_list">
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date de Création</th>
+                <th>Etat</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Nom d'utilisateur</th>
+                <th>Matriclue</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
 
+    <section class="add_user">
+        <button type="button">Ajouter d'utilisateur</button>
+
+        <div class="modal">
+            <form action="" id="form">
+                <h1>Ajout d'utilisateurs</h1>
+                <div class="container">
+                    <div>
+                        <label for="nom">
+                            Nom
+                        </label>
+                        <input id="nom" type="text" required>
+                    </div>
+
+                    <div>
+                        <label for="prenom">
+                            Prénom </label>
+                        <input id="prenom" type="text" required>
+
+                    </div>
+                    <div>
+                        <label for="etat">
+                            Etat</label>
+                        <select id="etat" name="" required>
+                            <option value="Validé">Validé</option>
+                            <option value="En validation" selected>En validation</option>
+                            <option value="Rejeté">Rejeté</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <label for="username">
+                            Nom d'utilisateur</label>
+                        <input id="username" type="text">
+                    </div>
+                    <div>
+
+                        <label for="creation_date">
+                            Date de Création
+                        </label>
+                        <input id="creation_date" type="datetime-local">
+
+                    </div>
+                    <!--Empty Cell-->
+                    <div>
+                    </div>
+                    <!--End Empty Cell-->
+                    <div>
+                        <label for="matricule">
+                            Matricule
+                        </label>
+                        <input id="matricule" required type="number">
+                    </div>
+                </div>
+                <button class="" type="submit">Enregistrer</button>
+            </form>
+
+        </div>
+    </section>
+
+</main>
 <!--Include JS Files-->
 <script src="./assets/js/main.js"></script>
 </body>
