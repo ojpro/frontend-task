@@ -36,6 +36,7 @@ let $ = (el) => document.querySelector(el);
 let tableBody = $('.users_list table tbody')
 let modal = $('#modalBox');
 let form = $('#form')
+
 // helper functions
 
 /**
@@ -62,6 +63,17 @@ function randomInt(length) {
  */
 function toggleModal() {
     modal.classList.toggle('hidden')
+}
+
+// clear form inputs
+
+function clearForm() {
+    $('#creation_date').value = '';
+    $('#etat').value = '';
+    $('#prenom').value = '';
+    $('#nom').value = '';
+    $('#username').value = '';
+    $('#matricule').value = ''
 }
 
 // list users from users array in the table's body
@@ -130,6 +142,8 @@ function addUser() {
     // hide modal
     toggleModal()
 
+    //clear form
+    clearForm()
 }
 
 /*
